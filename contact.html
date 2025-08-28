@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - TravelMate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TravelMate</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../images/country1.jpg') no-repeat center center/cover;">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Share your thoughts or ask questions about TravelMate.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="destination-section">
+            <div class="contact-card">
+                <form id="contactForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea><br><br>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <p id="confirmationMessage" class="random-text"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TravelMate. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
