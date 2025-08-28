@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TravelMate</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Discover Your Next Adventure</h1>
+            <p>AI-powered travel recommendations personalized just for you.</p>
+            <button onclick="scrollToSection('beach')">Explore Now</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="beach" class="destination-section">
+            <h2>Beach Recommendations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="images/beach1.jpeg" alt="Beach 1">
+                    <p>Bali Beach – Sun, Sand, and Serenity</p>
+                </div>
+                <div class="card">
+                    <img src="images/beach2.jpeg" alt="Beach 2">
+                    <p>Phuket – Tropical Paradise</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="temple" class="destination-section">
+            <h2>Temple Recommendations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="images/temple1.jpeg" alt="Temple 1">
+                    <p>Angkor Wat – Ancient Wonder</p>
+                </div>
+                <div class="card">
+                    <img src="images/temple2.jpeg" alt="Temple 2">
+                    <p>Kyoto – Spiritual Journey</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="country" class="destination-section">
+            <h2>Country-Based Recommendations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="images/country1.jpeg" alt="Country 1">
+                    <p>Paris – City of Light</p>
+                </div>
+                <div class="card">
+                    <img src="images/country2.jpeg" alt="Country 2">
+                    <p>Rome – History & Culture</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="random-destination" class="destination-section">
+            <h2>Need a Random Recommendation?</h2>
+            <button id="randomBtn" class="btn">Get Random Destination</button>
+            <p id="randomDisplay" class="random-text"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TravelMate. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
