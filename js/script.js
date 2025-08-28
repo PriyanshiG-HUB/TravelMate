@@ -56,3 +56,33 @@ function scrollToSection(id){
     const section = document.getElementById(id);
     section.scrollIntoView({behavior: "smooth"});
 }
+// Contact form submission handler
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    if (form) {
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            document.getElementById("confirmationMessage").textContent =
+                "✅ Thank you! Your message has been sent.";
+            this.reset();
+        });
+    }
+});
+// Search function
+function searchContent() {
+    const query = document.getElementById("searchInput").value.toLowerCase();
+    let sectionId = "";
+
+    if (query.includes("beach")) {
+        sectionId = "beach";
+    } else if (query.includes("temple")) {
+        sectionId = "temple";
+    } else if (query.includes("country")) {
+        sectionId = "country";
+    } else {
+        alert("No matching destinations found. Try 'beach', 'temple', or 'country'.");
+        return;
+    }
+
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+}

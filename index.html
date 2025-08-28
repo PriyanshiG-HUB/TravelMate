@@ -14,6 +14,11 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
+        <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search destinations...">
+    <button onclick="searchContent()">Search</button>
+</div>
+
     </nav>
 
     <header class="hero">
@@ -25,47 +30,123 @@
     </header>
 
     <main>
-        <section id="beach" class="destination-section">
-            <h2>Beach Recommendations</h2>
-            <div class="destination-cards">
-                <div class="card">
-                    <img src="images/beach1.jpeg" alt="Beach 1">
-                    <p>Bali Beach – Sun, Sand, and Serenity</p>
-                </div>
-                <div class="card">
-                    <img src="images/beach2.jpeg" alt="Beach 2">
-                    <p>Phuket – Tropical Paradise</p>
-                </div>
+<section id="beach" class="destination-section">
+    <h2>Beach Recommendations</h2>
+    <div class="destination-cards">
+        <div class="card">
+            <img src="images/beach1.jpeg" alt="Bali Beach">
+            <div class="card-content">
+                <h3>Bali Beach</h3>
+                <p>Sun, sand, and serenity — Bali is known for its breathtaking sunsets and lively beach culture.</p>
+                <p><strong>Best Time to Visit:</strong> April – October</p>
             </div>
-        </section>
+        </div>
+        <div class="card">
+            <img src="images/beach2.jpeg" alt="Phuket">
+            <div class="card-content">
+                <h3>Phuket</h3>
+                <p>A tropical paradise with crystal-clear waters, vibrant nightlife, and rich Thai culture.</p>
+                <p><strong>Best Time to Visit:</strong> November – February</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/beach3.jpeg" alt="Maldives">
+            <div class="card-content">
+                <h3>Maldives</h3>
+                <p>Crystal lagoons, overwater villas, and a dream destination for luxury and romance.</p>
+                <p><strong>Best Time to Visit:</strong> November – April</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/beach4.jpeg" alt="Goa">
+            <div class="card-content">
+                <h3>Goa</h3>
+                <p>India’s beach capital with lively nightlife, water sports, and Portuguese heritage.</p>
+                <p><strong>Best Time to Visit:</strong> November – February</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <section id="temple" class="destination-section">
-            <h2>Temple Recommendations</h2>
-            <div class="destination-cards">
-                <div class="card">
-                    <img src="images/temple1.jpeg" alt="Temple 1">
-                    <p>Angkor Wat – Ancient Wonder</p>
-                </div>
-                <div class="card">
-                    <img src="images/temple2.jpeg" alt="Temple 2">
-                    <p>Kyoto – Spiritual Journey</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="country" class="destination-section">
-            <h2>Country-Based Recommendations</h2>
-            <div class="destination-cards">
-                <div class="card">
-                    <img src="images/country1.jpeg" alt="Country 1">
-                    <p>Paris – City of Light</p>
-                </div>
-                <div class="card">
-                    <img src="images/country2.jpeg" alt="Country 2">
-                    <p>Rome – History & Culture</p>
-                </div>
+<section id="temple" class="destination-section">
+    <h2>Temple Recommendations</h2>
+    <div class="destination-cards">
+        <div class="card">
+            <img src="images/temple1.jpeg" alt="Angkor Wat">
+            <div class="card-content">
+                <h3>Angkor Wat</h3>
+                <p>One of the largest religious monuments in the world, representing Khmer architecture and spirituality.</p>
+                <p><strong>Best Time to Visit:</strong> December – March</p>
             </div>
-        </section>
+        </div>
+        <div class="card">
+            <img src="images/temple2.jpeg" alt="Kyoto">
+            <div class="card-content">
+                <h3>Kyoto Temples</h3>
+                <p>A spiritual journey through Japan’s cultural heart, with historic temples and serene gardens.</p>
+                <p><strong>Best Time to Visit:</strong> March – May, October – November</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/Golden-Temple-at-Night-Amritsar-1024x683.webp" alt="Golden Temple">
+            <div class="card-content">
+                <h3>Golden Temple (Amritsar, India)</h3>
+                <p>A sacred Sikh shrine, glowing in gold and surrounded by a peaceful holy lake.</p>
+                <p><strong>Best Time to Visit:</strong> October – March</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/temple4.jpeg" alt="Borobudur">
+            <div class="card-content">
+                <h3>Borobudur (Indonesia)</h3>
+                <p>The world’s largest Buddhist temple, decorated with stunning stone carvings.</p>
+                <p><strong>Best Time to Visit:</strong> April – October</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="country" class="destination-section">
+    <h2>Country-Based Recommendations</h2>
+    <div class="destination-cards">
+        <div class="card">
+            <img src="images/country1.jpeg" alt="Paris">
+            <div class="card-content">
+                <h3>Paris</h3>
+                <p>The City of Light — famous for its art, fashion, gastronomy, and the iconic Eiffel Tower.</p>
+                <p><strong>Best Time to Visit:</strong> April – June, September – October</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/country2.jpeg" alt="Rome">
+            <div class="card-content">
+                <h3>Rome</h3>
+                <p>The Eternal City — a blend of ancient ruins, Renaissance art, and Italian cuisine.</p>
+                <p><strong>Best Time to Visit:</strong> April – June, Late September – October</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/country3.jpeg" alt="Switzerland">
+            <div class="card-content">
+                <h3>Switzerland</h3>
+                <p>Snow-capped Alps, crystal lakes, and the perfect destination for nature lovers.</p>
+                <p><strong>Best Time to Visit:</strong> June – September (summer), December – February (skiing)</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/country4.jpeg" alt="Thailand">
+            <div class="card-content">
+                <h3>Thailand</h3>
+                <p>Exotic beaches, ancient temples, and delicious street food — a traveler’s paradise.</p>
+                <p><strong>Best Time to Visit:</strong> November – March</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
         <section id="random-destination" class="destination-section">
             <h2>Need a Random Recommendation?</h2>
