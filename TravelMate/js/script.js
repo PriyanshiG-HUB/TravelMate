@@ -56,3 +56,20 @@ function scrollToSection(id){
     const section = document.getElementById(id);
     section.scrollIntoView({behavior: "smooth"});
 }
+// Search Function
+function searchDestination(){
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let text = card.textContent.toLowerCase();
+        card.style.display = text.includes(input) ? "block" : "none";
+    });
+}
+
+// Clear Search
+function clearSearch(){
+    document.getElementById("searchInput").value = "";
+    let cards = document.querySelectorAll(".card");
+    cards.forEach(card => card.style.display = "block");
+}

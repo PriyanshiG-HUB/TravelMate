@@ -5,8 +5,18 @@
     <title>TravelMate</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">TravelMate</div>
         <ul class="nav-links">
@@ -14,59 +24,76 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search destinations...">
+            <button onclick="searchDestination()">Search</button>
+            <button onclick="clearSearch()">Clear</button>
+        </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="hero-text">
             <h1>Discover Your Next Adventure</h1>
-            <p>AI-powered travel recommendations personalized just for you.</p>
+            <p>Explore breathtaking beaches, ancient temples, and vibrant cities with AI-powered travel recommendations tailored just for you.</p>
             <button onclick="scrollToSection('beach')">Explore Now</button>
         </div>
     </header>
 
     <main>
+        <!-- Beach -->
         <section id="beach" class="destination-section">
             <h2>Beach Recommendations</h2>
             <div class="destination-cards">
                 <div class="card">
                     <img src="images/beach1.jpeg" alt="Beach 1">
                     <p>Bali Beach – Sun, Sand, and Serenity</p>
+                    <a href="https://www.balitourismboard.org/" target="_blank" class="btn">Visit</a>
                 </div>
                 <div class="card">
                     <img src="images/beach2.jpeg" alt="Beach 2">
                     <p>Phuket – Tropical Paradise</p>
+                    <a href="https://www.tourismthailand.org/Destinations/Provinces/Phuket/348" target="_blank" class="btn">Visit</a>
                 </div>
             </div>
         </section>
 
+        <!-- Temple -->
         <section id="temple" class="destination-section">
             <h2>Temple Recommendations</h2>
             <div class="destination-cards">
                 <div class="card">
                     <img src="images/temple1.jpeg" alt="Temple 1">
                     <p>Angkor Wat – Ancient Wonder</p>
+                    <a href="https://www.tourismcambodia.com/" target="_blank" class="btn">Visit</a>
                 </div>
                 <div class="card">
                     <img src="images/temple2.jpeg" alt="Temple 2">
                     <p>Kyoto – Spiritual Journey</p>
+                    <a href="https://kyoto.travel/en" target="_blank" class="btn">Visit</a>
                 </div>
             </div>
         </section>
 
+        <!-- Country -->
         <section id="country" class="destination-section">
             <h2>Country-Based Recommendations</h2>
             <div class="destination-cards">
                 <div class="card">
                     <img src="images/country1.jpeg" alt="Country 1">
                     <p>Paris – City of Light</p>
+                    <a href="https://en.parisinfo.com/" target="_blank" class="btn">Visit</a>
                 </div>
                 <div class="card">
                     <img src="images/country2.jpeg" alt="Country 2">
                     <p>Rome – History & Culture</p>
+                    <a href="https://www.turismoroma.it/en" target="_blank" class="btn">Visit</a>
                 </div>
             </div>
         </section>
 
+        <!-- Random Destination -->
         <section id="random-destination" class="destination-section">
             <h2>Need a Random Recommendation?</h2>
             <button id="randomBtn" class="btn">Get Random Destination</button>

@@ -1,0 +1,32 @@
+{
+  "recommendations": [
+    {
+      "category": "Beach",
+      "title": "Bali Beach",
+      "description": "A tropical paradise with golden sands and turquoise waters.",
+      "image": "images/beach1.jpeg",
+      "link": "https://en.wikipedia.org/wiki/Bali"
+    },
+    {
+      "category": "Temple",
+      "title": "Meenakshi Temple",
+      "description": "A majestic Hindu temple in Madurai, Tamil Nadu.",
+      "image": "images/temple1.jpeg",
+      "link": "https://en.wikipedia.org/wiki/Meenakshi_Temple"
+    },
+    {
+      "category": "Country",
+      "title": "Paris",
+      "description": "The romantic ‘City of Light’, home to the Eiffel Tower.",
+      "image": "images/country1.jpeg",
+      "link": "https://en.wikipedia.org/wiki/Paris"
+    },
+    {
+      "category": "Country",
+      "title": "Rome",
+      "description": "A historic treasure with the Colosseum and Vatican City.",
+      "image": "images/country2.jpeg",
+      "link": "https://en.wikipedia.org/wiki/Rome"
+    }
+  ]
+}
